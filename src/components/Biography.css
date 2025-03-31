@@ -1,0 +1,37 @@
+.biography {
+  margin-bottom: 4rem;
+}
+
+.biography h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid #e9ecef;
+}
+
+.biography-content {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #444;
+}
+
+.biography-content p {
+  margin-bottom: 1.5rem;
+}
+
+.biography-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .biography h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .biography-content {
+    font-size: 1rem;
+    line-height: 1.7;
+  }
+}

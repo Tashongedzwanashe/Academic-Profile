@@ -1,0 +1,51 @@
+.profile-header {
+  padding: 6rem 2rem 2rem;
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.profile-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.profile-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.profile-content h2 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 1.5rem;
+}
+
+.institution {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+}
+
+.contact-info {
+  color: #666;
+  line-height: 1.6;
+}
+
+.contact-info p {
+  margin: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    padding: 5rem 1rem 1.5rem;
+  }
+
+  .profile-content h1 {
+    font-size: 2rem;
+  }
+
+  .profile-content h2 {
+    font-size: 1.2rem;
+  }
+}
