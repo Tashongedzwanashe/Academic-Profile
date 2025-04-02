@@ -1,0 +1,9 @@
+.assistants-container {
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+.assistants-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}

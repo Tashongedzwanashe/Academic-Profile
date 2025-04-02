@@ -1,0 +1,108 @@
+.lab-director-container {
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+.lab-director-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.director-profile {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.director-profile h3 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.director-profile h4 {
+  font-size: 1.5rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.director-info {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.director-info p {
+  margin-bottom: 1rem;
+}
+
+.director-roles {
+  margin: 2rem 0;
+}
+
+.director-roles h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.director-roles ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.director-roles li {
+  margin-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.director-roles li:before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: hsl(30.7, 97.2%, 72.4%);
+}
+
+.director-link {
+  margin-top: 2rem;
+}
+
+.profile-link {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: hsl(30.7, 97.2%, 72.4%);
+  color: #4a3100;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.profile-link:hover {
+  background-color: hsl(30.7, 97.2%, 65%);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .lab-director-container {
+    padding: 1rem;
+  }
+
+  .director-profile {
+    padding: 1.5rem;
+  }
+
+  .director-profile h3 {
+    font-size: 1.5rem;
+  }
+
+  .director-profile h4 {
+    font-size: 1.2rem;
+  }
+
+  .director-info {
+    font-size: 1rem;
+  }
+}

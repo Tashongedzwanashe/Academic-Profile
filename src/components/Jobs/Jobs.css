@@ -1,0 +1,9 @@
+.jobs-container {
+  padding: 2rem;
+  margin-top: 60px;
+}
+
+.jobs-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,38 @@
+.events-container {
+  padding: 2rem;
+  margin-top: 20px;
+}
+
+.events-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.events-list {
+  display: grid;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.event-item {
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.event-date {
+  font-weight: bold;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.event-title {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.event-description {
+  color: #555;
+  line-height: 1.6;
+}

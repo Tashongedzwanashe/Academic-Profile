@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #ffffff;
+  background-color: hsl(30.7, 97.2%, 72.4%);
   padding: 1rem 2rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
@@ -15,7 +15,12 @@
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #333;
+  color: #4a3100;
+}
+
+.navbar-brand a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav-links {
@@ -23,22 +28,147 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 2rem;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  position: relative;
 }
 
 .nav-links li a {
   text-decoration: none;
-  color: #666;
+  color: #5c3d00;
   font-size: 0.9rem;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+/* Dropdown styles */
+.dropdown {
+  position: relative;
+}
+
+/* Removed the dropdown arrow styles */
+.dropdown-toggle {
+  position: relative;
+  padding-right: 1rem !important;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: hsl(30.7, 97.2%, 72.4%);
+  min-width: 200px;
+  padding: 0.5rem 0;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.dropdown-menu li {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-menu li a {
+  display: block;
+  padding: 0.7rem 1.5rem;
+  color: #5c3d00;
+  transition: all 0.3s ease;
+}
+
+.dropdown-menu li a:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: #2b1c00;
+  transform: translateX(5px);
+}
+
+/* Hover effects */
+.nav-links li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #4a3100;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #000;
+  color: #2b1c00;
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
+.nav-links li a:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+/* Active state */
+.nav-links li a.active {
+  color: #2b1c00;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.nav-links li a.active::before {
+  transform: scaleX(1);
+}
+
+/* Mobile responsive styles */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .navbar-brand {
+    margin-bottom: 1rem;
+  }
+
   .nav-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+  }
+
+  .dropdown-menu {
+    position: static;
+    transform: none;
+    box-shadow: none;
+    background-color: rgba(0, 0, 0, 0.02);
     display: none;
+  }
+
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .dropdown-menu li a {
+    padding-left: 2rem;
+  }
+
+  .dropdown-menu li a:hover {
+    transform: none;
   }
 }

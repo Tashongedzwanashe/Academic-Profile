@@ -5,10 +5,14 @@ const ProfileHeader = () => {
   return (
     <div className="profile-header">
       <div className="profile-content">
-        <h1>Dirk Brockmann</h1>
-        <h2>Director</h2>
+        <h1>Farkteh Ghanbarnejad</h1>
+        <h2>Professor</h2>
         <div className="institution">
-          <p>Center Synergy of Systems, TUD Dresden University of Technology</p>
+          <p>
+            Computer Science, SRH University of Applied Sciences. Head of Study
+            Programme B.Sc. & M.Sc., Leipzig Campus School of Technology and
+            Architecture https://www.srh-berlin.de/en/
+          </p>
         </div>
         <div className="contact-info">
           <p>dirk.brockmann@tu-dresden.de</p>
