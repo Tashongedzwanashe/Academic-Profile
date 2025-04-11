@@ -5,9 +5,14 @@
 }
 
 .main-content {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+/* Add padding-top when ProfileHeader is not present */
+.main-content.no-profile-header {
+  padding-top: 100px; /* Adjust this value based on your navbar height */
 }
 
 /* Reset some default styles */
